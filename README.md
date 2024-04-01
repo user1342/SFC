@@ -37,7 +37,7 @@ python compare.py source_folder target_folder -o output_report.txt
 
 Replace source_folder and target_folder with the paths to the folders you want to compare. The -o option specifies the output file for the report.
 
-📜 Output
+## 📜 Output
 The tool generates a plain text file (output_report.txt by default) listing modifications, additions, and removals along with their paths in a structured manner. For example:
 
 ```
@@ -63,7 +63,7 @@ Modified: arch\arm64\boot\dts\xilinx\zynqmp.dtsi
 Removed: arch\arm64\configs\taimen_defconfig
 ```
 
-🙏 Contributions
+## 🙏 Contributions
 Contributions to the Simple Folder Compare Tool are welcome. If you would like to contribute, please follow the guidelines provided in the CONTRIBUTING.md file.
 - Fork the repository to your own GitHub account.
 - Create a new branch with a descriptive name for your contribution.
@@ -74,8 +74,8 @@ Contributions to the Simple Folder Compare Tool are welcome. If you would like t
 - Once your changes have been reviewed and approved, they will be merged into the main repository.
 
 
-🐛 Bug Reports and Feature Requests
+## 🐛 Bug Reports and Feature Requests
 If you encounter any bugs or have suggestions for new features, please open an issue in the GitHub repository.
 
-📄 License
+## 📄 License
 [GNU General Public License v3.0](https://choosealicense.com/licenses/gpl-3.0/)
