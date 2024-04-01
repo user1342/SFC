@@ -3,16 +3,43 @@ import os
 import filecmp
 
 def compare_folders(source, target):
+    """
+    Compare the contents of two folders.
+
+    Args:
+        source (str): Path to the source folder.
+        target (str): Path to the target folder.
+
+    Returns:
+        Dircmp: Object containing the comparison results.
+    """
     diffs = filecmp.dircmp(source, target)
     return diffs
 
 def compare_files(source_file, target_file):
+    """
+    Compare the content of two text files.
+
+    Args:
+        source_file (str): Path to the source file.
+        target_file (str): Path to the target file.
+
+    Returns:
+        bool: True if the content of both files is identical, False otherwise.
+    """
     with open(source_file, 'r', encoding='utf-8', errors='ignore') as sf, open(target_file, 'r', encoding='utf-8', errors='ignore') as tf:
         source_content = sf.read()
         target_content = tf.read()
     return source_content == target_content
 
 def generate_txt_report(diffs, report_file):
+    """
+    Generate a TXT report based on the comparison results.
+
+    Args:
+        diffs (Dircmp): Object containing the comparison results.
+        report_file (str): Path to the output TXT report file.
+    """
     def format_txt(diff, path=""):
         output = ""
         for name in diff.common_dirs:
