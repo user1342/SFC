@@ -48,7 +48,7 @@ Modified: Documentation\devicetree\bindings\net\nfc\nxp-nci.txt
 Modified: Documentation\devicetree\bindings\net\nfc\pn544.txt
 Modified: Documentation\devicetree\bindings\sound\wm8994.txt
 Modified: Documentation\filesystems\affs.txt
-Added: Documentation\hw-vuln\special-register-buffer-data-sampling.rst
+Added: Documentation\example.txt
 Modified: Documentation\networking\ip-sysctl.txt
 Modified: Documentation\networking\l2tp.txt
 Modified: Documentation\kernel-parameters.txt
